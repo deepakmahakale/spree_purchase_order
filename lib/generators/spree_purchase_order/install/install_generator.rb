@@ -12,6 +12,10 @@ module SpreePurchaseOrder
         inject_into_file 'app/assets/stylesheets/admin/all.css', " *= require admin/spree_purchase_order\n", before: /\*\//, verbose: true
       end
 
+      def add_source_attributes
+        append_file 'config/initializers/spree.rb', "Spree::PermittedAttributes.source_attributes.push :po_number, :organization_name"
+      end
+
       def add_migrations
         run 'bundle exec rake railties:install:migrations FROM=spree_purchase_order'
       end
