@@ -4,28 +4,12 @@ module Spree
       Spree::PurchaseOrder
     end
 
-    def actions
-      %w(complete void)
-    end
-
-    def can_complete?(payment)
-      %w(checkout pending).include?(payment.state)
-    end
-
-    def can_void?(payment)
-      payment.state != 'void'
-    end
-
     def authorize(*args)
-      ActiveMerchant::Billing::Response.new(true, 'Purchase Order: Success', {}, {})
-    end
-
-    def complete(*)
-      ActiveMerchant::Billing::Response.new(true, 'Purchase Order: Success', {}, {})
+      simulated_successful_billing_response('Purchase Order: Success')
     end
 
     def void(*args)
-      ActiveMerchant::Billing::Response.new(true, '', {}, {})
+      simulated_successful_billing_response
     end
 
     def source_required?
@@ -34,6 +18,12 @@ module Spree
 
     def auto_capture?
       false
+    end
+
+    private
+
+    def simulated_successful_billing_response(message = "")
+      ActiveMerchant::Billing::Response.new(true, message, {}, {})
     end
   end
 end
