@@ -1,7 +1,7 @@
 Spree::Payment.class_eval do
-  has_one :purchase_order
+  scope :from_purchase_order, -> { where(source_type: 'Spree::PurchaseOrder') }
 
   def po?
-    payment_method.type == 'Spree::PaymentMethod::PurchaseOrder'
+    source_type == 'Spree::PurchaseOrder'
   end
 end
