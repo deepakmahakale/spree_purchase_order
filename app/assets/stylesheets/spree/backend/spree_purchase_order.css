@@ -1,3 +1,39 @@
 /*
  *= require spree/backend
  */
+table th.actions .fa-complete:hover, table td.actions .fa-complete:hover{
+  background-color: #9FC820;
+  color: #FFFFFF;
+}
+table tbody tr.before-highlight.action-complete td {
+  border-bottom-color: #e0f1a9;
+}
+table tbody tr.highlight.action-complete td {
+  background-color: #f8fceb;
+  border-color: #e0f1a9;
+}
+.fa-complete:before {
+  content: "\f00c";
+}
+#powerTip.complete {
+  background-color: #9FC820;
+}
+#powerTip.complete.n:before, #powerTip.complete.ne:before, #powerTip.complete.nw:before {
+  border-top-color: #9FC820;
+}
+#powerTip.complete.s:before, #powerTip.complete.se:before, #powerTip.complete.sw:before {
+  border-bottom-color: #9FC820;
+}
+#powerTip.complete.w:before {
+  border-left-color: #9FC820;
+}
+
+
+
+
+
+
+
+
+
+
