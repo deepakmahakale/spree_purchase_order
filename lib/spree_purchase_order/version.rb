@@ -1,3 +1,3 @@
 module SpreePurchaseOrder
-  VERSION = '2.2.0.beta2'
+  VERSION = '2.2.0'
 end
