@@ -1,3 +1,16 @@
 /*
  *= require spree/backend
  */
+.btn.action-complete {
+  color: #fff;
+  background-color: #7DB942;
+  border-color: #70a63b;
+}
+.btn.action-complete:hover {
+  color: #fff;
+  background-color: #649335;
+  border-color: #52792b;
+}
+.icon.icon-complete:before{
+  content: "\e013";
+}
