@@ -1,6 +1,7 @@
 module Spree
-  class PurchaseOrder < ActiveRecord::Base
-    has_one :payment, as: :source
+  class PurchaseOrder < Spree::Base
+    belongs_to :payment_method
+    has_many :payments, as: :source
 
     validates_presence_of :po_number, :organization_name
 
