@@ -1,0 +1,10 @@
+en:
+  spree:
+    purchase_order: Purchase order
+  activerecord:
+    models:
+      spree/purchase_order: Purchase order
+    attributes:
+      spree/purchase_order:
+        po_number: Number
+        organization_name: Organization name
