@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/deepakmahakale/spree_purchase_order.svg?branch=master)](https://travis-ci.org/deepakmahakale/spree_purchase_order)
+
 # Spree Purchase Order
 
 Add Purchase Order payment method in Spree
