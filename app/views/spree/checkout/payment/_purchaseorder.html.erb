@@ -1,15 +1,9 @@
-<div class='well clearfix'>
-  <% param_prefix = "payment_source[#{payment_method.id}]" %>
-  <p class='field'>
-    <%= label_tag :po_number do %>
-      PO Number<abbr class='required' title='required'>*</abbr>
-    <% end %>
-    <%= text_field_tag "#{param_prefix}[po_number]", '', id: :po_number, class: 'form-control required', size: 10, maxlength: 10, autocomplete: "off" %>
-  </p>
-  <p class='field'>
-    <%= label_tag :organization_name do %>
-      Organization Name<abbr class='required' title='required'>*</abbr>
-    <% end %>
-    <%= text_field_tag "#{param_prefix}[organization_name]", '', id: :organization_name, class: 'form-control required'%>
-  </p>
-</div>
+<% param_prefix = "payment_source[#{payment_method.id}]" %>
+<p class='field'>
+  <%= label_tag :po_number, "PO Number" %><span class="required">*</span><br />
+  <%= text_field_tag "#{param_prefix}[po_number]", '', id: :po_number, size: 10, maxlength: 10, autocomplete: "off" %>
+</p>
+<p class='field'>
+  <%= label_tag :organization_name, "Organization Name" %><span class="required">*</span><br />
+  <%= text_field_tag "#{param_prefix}[organization_name]", '', id: :organization_name, class: 'form-control required'%>
+</p>
