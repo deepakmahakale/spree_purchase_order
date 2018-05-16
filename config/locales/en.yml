@@ -1,6 +1,8 @@
 en:
   spree:
     purchase_order: Purchase order
+    po_number: PO Number
+    organization_name: Organization Name
   activerecord:
     models:
       spree/purchase_order: Purchase order
