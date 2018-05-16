@@ -20,9 +20,9 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 3.2.0.rc1'
+  s.add_dependency 'spree_core', '~> 3.2.0'
 
   s.add_development_dependency 'sqlite3'
   s.add_development_dependency 'rspec-rails'
-  s.add_development_dependency 'factory_girl_rails'
+  s.add_development_dependency 'factory_bot_rails'
 end

@@ -1,0 +1,13 @@
+<fieldset data-hook='purchase_order'>
+  <legend><%= Spree.t(:purchase_order) %></legend>
+  <table class='table table-condensed table-bordered'>
+    <tr>
+      <th width='20%'><%= Spree.t(:po_number) %>:</th>
+      <td><%= payment.source.po_number %></td>
+    </tr>
+    <tr>
+      <th><%= Spree.t(:organization_name) %>:</th>
+      <td><%= payment.source.organization_name %></td>
+    </tr>
+  </table>
+</fieldset>
