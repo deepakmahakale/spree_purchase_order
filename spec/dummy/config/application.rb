@@ -21,8 +21,6 @@ module Dummy
         Rails.configuration.cache_classes ? require(c) : load(c)
       end
     end
-
-    config.active_record.raise_in_transactional_callbacks = true
   end
 end
 
