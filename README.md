@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/deepakmahakale/spree_purchase_order.svg?branch=master)](https://travis-ci.org/deepakmahakale/spree_purchase_order)
+[![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
 
 # Spree Purchase Order
 
