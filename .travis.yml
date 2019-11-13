@@ -1,9 +1,9 @@
 language: ruby
 rvm:
-  - 2.2.7
-  - 2.3.0
+  - 2.3.3
   - 2.4.0
   - 2.5.0
+  - 2.6.0
 
 before_script:
   - cd spec/dummy && bundle exec rake railties:install:migrations
