@@ -3,11 +3,11 @@
 
   <div class="payment-gateway-fields">
     <div class="mb-4 payment-gateway-field checkout-content-inner-field">
-      <%= text_field_tag "#{param_prefix}[po_number]", '', id: 'po_number', class: 'spree-flat-input', placeholder: Spree.t(:po_number) %>
+      <%= text_field_tag "#{param_prefix}[po_number]", '', id: 'po_number', class: 'spree-flat-input', placeholder: Spree.t(:po_number), required: true %>
     </div>
 
     <div class="payment-gateway-field checkout-content-inner-field">
-      <%= text_field_tag "#{param_prefix}[organization_name]", '', id: 'organization_name', class: 'spree-flat-input', placeholder: Spree.t(:organization_name) %>
+      <%= text_field_tag "#{param_prefix}[organization_name]", '', id: 'organization_name', class: 'spree-flat-input', placeholder: Spree.t(:organization_name), required: true %>
     </div>
   </div>
 </div>
