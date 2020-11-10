@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Spree
   class PurchaseOrder < Spree::Base
     belongs_to :payment_method
