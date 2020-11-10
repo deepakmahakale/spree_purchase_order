@@ -21,6 +21,8 @@ module Dummy
         Rails.configuration.cache_classes ? require(c) : load(c)
       end
     end
+
+    config.load_defaults 6.0
   end
 end
 

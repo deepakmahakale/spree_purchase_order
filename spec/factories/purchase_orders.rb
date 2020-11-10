@@ -37,6 +37,7 @@ FactoryBot.define do
     name { 'Spree Test Store' }
     url { 'www.example.com' }
     mail_from_address { 'spree@example.org' }
+    default_currency { 'USD' }
   end
 
   # factory :user, class: Spree.user_class do
