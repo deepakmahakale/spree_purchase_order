@@ -12,3 +12,5 @@ spec/dummy/db/*.sqlite3
 spec/dummy/db/schema.rb
 spec/dummy/db/migrate/*.rb
 spec/dummy/public/*
+.idea
+.generators

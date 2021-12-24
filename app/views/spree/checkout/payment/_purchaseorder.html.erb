@@ -1,15 +1,13 @@
-<div class='well clearfix'>
+<div class="payment-gateway">
   <% param_prefix = "payment_source[#{payment_method.id}]" %>
-  <p class='field'>
-    <%= label_tag :po_number do %>
-      <%= Spree.t(:po_number) %><abbr class='required' title='required'>*</abbr>
-    <% end %>
-    <%= text_field_tag "#{param_prefix}[po_number]", '', id: :po_number, class: 'form-control required', size: 10, maxlength: 10, autocomplete: "off" %>
-  </p>
-  <p class='field'>
-    <%= label_tag :organization_name do %>
-      <%= Spree.t(:organization_name) %><abbr class='required' title='required'>*</abbr>
-    <% end %>
-    <%= text_field_tag "#{param_prefix}[organization_name]", '', id: :organization_name, class: 'form-control required'%>
-  </p>
+
+  <div class="payment-gateway-fields">
+    <div class="mb-4 payment-gateway-field checkout-content-inner-field">
+      <%= text_field_tag "#{param_prefix}[po_number]", '', id: 'po_number', class: 'spree-flat-input', placeholder: Spree.t(:po_number), required: true %>
+    </div>
+
+    <div class="payment-gateway-field checkout-content-inner-field">
+      <%= text_field_tag "#{param_prefix}[organization_name]", '', id: 'organization_name', class: 'spree-flat-input', placeholder: Spree.t(:organization_name), required: true %>
+    </div>
+  </div>
 </div>
